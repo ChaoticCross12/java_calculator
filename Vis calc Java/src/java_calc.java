@@ -41,17 +41,23 @@ public class java_calc extends JFrame
             g.drawRect(250, 350, 100, 100);
             g.drawString("9", 280, 420);
             g.drawRect(50, 450, 100, 100);
+            g.drawString("0", 80, 520);
             
-            g.drawRect(150, 450, 100, 100);
-            
-            g.drawRect(250, 450, 100, 100);
-            
-            g.drawRect(350, 450, 100, 100);
+           
              
             //functions
             g.drawRect(350, 150, 100, 100);
+            g.drawString("+", 380, 220);
             g.drawRect(350, 250, 100, 100);
+            g.drawString("-", 390, 320);
             g.drawRect(350, 350, 100, 100);
+            g.drawString("x", 380, 420);
+            g.drawRect(150, 450, 100, 100);
+            g.drawString("/", 390, 520);
+            g.drawRect(250, 450, 100, 100);
+            g.drawString("=", 280, 520);
+            g.drawRect(350, 450, 100, 100);
+            g.drawString("C", 175, 520);
       }
 
        public static void main(String[] args)
