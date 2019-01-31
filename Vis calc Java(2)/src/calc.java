@@ -7,7 +7,8 @@ public class calc
 {
 
 	private JFrame f;
-	//private JPanel p;
+	private JPanel p;
+	private JPanel lilp;
 	//private JLabel lab;
 	
 	//creating buttons
@@ -42,15 +43,21 @@ public class calc
 		f.setSize(370, 500);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setResizable(false);
-		f.setLayout(null);
+		//f.setLayout(null);
 		f.setBackground(Color.BLACK);
 		f.setFont(new Font("Times Romal", Font.BOLD, 0));
 
 		
 		//panel
-		//p = new JPanel();
-		//p.setBackground(Color.DARK_GRAY);
-		//f.add(p);
+		p = new JPanel();
+		p.setBackground(Color.DARK_GRAY);
+		p.setLayout(null);
+		f.add(p);
+		
+		lilp = new JPanel();
+		lilp.setBackground(Color.WHITE);
+		p.add(lilp);
+		lilp.setBounds(30, 50, 300, 70);
 
 		
 		//button
@@ -102,24 +109,24 @@ public class calc
 		butres = new JButton("AC");
 		butres.setBounds(260, 160, 50, 50);
 		
-		//adding button to panel;
-		f.add(b1);
-		f.add(b2);
-		f.add(b3);
-		f.add(b4);
-		f.add(b5);
-		f.add(b6);
-		f.add(b7);
-		f.add(b8);
-		f.add(b9);	
-		f.add(b0);
+		//adding button to frame;
+		p.add(b1);
+		p.add(b2);
+		p.add(b3);
+		p.add(b4);
+		p.add(b5);
+		p.add(b6);
+		p.add(b7);
+		p.add(b8);
+		p.add(b9);	
+		p.add(b0);
 		
-		f.add(func1);
-		f.add(func2);
-		f.add(func3);
-		f.add(func4);
-		f.add(func5);
-		f.add(butres);
+		p.add(func1);
+		p.add(func2);
+		p.add(func3);
+		p.add(func4);
+		p.add(func5);
+		p.add(butres);
 	}
 	
 	
